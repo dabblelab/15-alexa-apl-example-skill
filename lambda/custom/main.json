@@ -1,0 +1,15 @@
+{
+  "type": "APL",
+  "version": "1.0",
+  "mainTemplate": {
+      "parameters": [
+          "payload"
+      ],
+      "items": [
+          {
+              "type": "Text",
+              "text": "Hello World"
+          }
+      ]
+  }
+}
