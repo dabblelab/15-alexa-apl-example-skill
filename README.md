@@ -6,7 +6,7 @@ This template uses the [Alexa Skills Kit for Node.js](https://github.com/alexa/a
 
 ## Tutorial Video
 
-[![Using the Alexa Presentation Language (APL)](https://i.ytimg.com/vi/pY3XUkvbEIs/sddefault.jpg=640x480)](https://youtu.be/pY3XUkvbEIs)
+[![Using the Alexa Presentation Language (APL)](https://i.ytimg.com/vi/pY3XUkvbEIs/sddefault.jpg =640x480)](https://youtu.be/pY3XUkvbEIs)
 
 ## Introduction
 
