@@ -4,6 +4,10 @@ This is an Alexa skill template that can be used as a starting point for buildin
 
 This template uses the [Alexa Skills Kit for Node.js](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) version 2.0 and is designed to be used with the [Alexa Skills Kit CLI](https://developer.amazon.com/docs/smapi/ask-cli-intro.html).
 
+## Tutorial Video
+
+[![Using the Alexa Presentation Language (APL)](http://img.youtube.com/vi/pY3XUkvbEIs/0.jpg)](https://youtu.be/pY3XUkvbEIs)
+
 ## Introduction
 
 The Alexa Presentation Language or APL is a language that lets you enhance your Alexa skills with full-featured, responsive, and interactive screen displays. Using the APL is works similar creating Web pages and provides similar support for HTML, CSS, and JavaScript.
