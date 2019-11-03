@@ -1,47 +1,38 @@
 {
-    "interactionModel": {
+  "interactionModel": {
       "languageModel": {
-        "invocationName": "presentation language starter",
-        "types": [
-  
-        ],
-        "intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name":"MyNameIsIntent",
-            "slots":[
-                {
-                    "name":"name",
-                    "type":"AMAZON.US_FIRST_NAME"
-                }
-            ],
-            "samples":[
-                "{name}",
-                "{name} is my name",
-                "my name is {name}",
-                "i am {name}",
-                "you can call me {name}"
-            ]
-        }
-        ]
+          "invocationName": "presentation language starter",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AboutIntent",
+                  "slots": [],
+                  "samples": [
+                      "more",
+                      "tell me more",
+                      "about",
+                      "what is this",
+                      "who made this skill",
+                      "tell me about this skill"
+                  ]
+              }
+          ],
+          "types": []
       }
-    }
   }
-  
+}

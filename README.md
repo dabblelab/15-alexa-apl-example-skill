@@ -2,7 +2,7 @@
 
 This is an Alexa skill template that can be used as a starting point for building, or learning how to build skills that uses the Alexa Presentation Language (APL). 
 
-This template uses the [Alexa Skills Kit for Node.js](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) version 2.0 and is designed to be used with the [Alexa Skills Kit CLI](https://developer.amazon.com/docs/smapi/ask-cli-intro.html).
+This template uses the [Alexa Skills Kit for Node.js](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) version 2.0 and is designed to be used with the [Alexa Skills Kit CLI](https://developer.amazon.com/docs/smapi/ask-cli-intro.html) but it can also be used with Alexa-Hosted skills.
 
 ## Tutorial Video
 
@@ -29,27 +29,21 @@ The Alexa Presentation Language or APL is a language that lets you enhance your 
 2. Add an APL template named `main.json`
 
     ```json
-    {
-        "type": "APL",
-        "version": "1.0",
-        "import": [
-            {
-                "name": "alexa-layouts",
-                "version": "1.0.0"
-            }
-        ],
-        "mainTemplate": {
-            "parameters": [
-                "payload"
-            ],
-            "items": [
-                {
-                    "type": "Text",
-                    "text": "Hello World"
-                }
-            ]
-        }
-    }
+      {
+          "type": "APL",
+          "version": "1.0",
+          "mainTemplate": {
+              "parameters": [
+                  "payload"
+              ],
+              "items": [
+                  {
+                      "type": "Text",
+                      "text": "hello from the alexa presentation language"
+                  }
+              ]
+          }
+      }
     ```
 
 3. Require the template in your `index.js` file
@@ -66,13 +60,10 @@ The Alexa Presentation Language or APL is a language that lets you enhance your 
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
       },
       handle(handlerInput) {
-        const speechText = 'Hello there. What is your name?';
-        const repromptText = 'Can you tell me your name?';
+        const speechText = 'Hello there. I\'ve left a  message you can read on the screen.';
 
         return handlerInput.responseBuilder
           .speak(speechText)
-          .reprompt(repromptText)
-          .withSimpleCard('Example Card Title', "Example card body content.")
           .addDirective({
             type: 'Alexa.Presentation.APL.RenderDocument',
             version: '1.0',

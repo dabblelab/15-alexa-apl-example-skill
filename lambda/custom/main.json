@@ -1,15 +1,15 @@
 {
-  "type": "APL",
-  "version": "1.0",
-  "mainTemplate": {
-      "parameters": [
-          "payload"
-      ],
-      "items": [
-          {
-              "type": "Text",
-              "text": "Hello World"
-          }
-      ]
-  }
+    "type": "APL",
+    "version": "1.0",
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Text",
+                "text": "hello from the alexa presentation language"
+            }
+        ]
+    }
 }

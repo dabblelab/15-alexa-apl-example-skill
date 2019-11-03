@@ -8,13 +8,10 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Hello there. What is your name?';
-    const repromptText = 'Can you tell me your name?';
+    const speechText = 'Hello there. I\'ve left a  message you can read on the screen.';
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .reprompt(repromptText)
-      .withSimpleCard('Example Card Title', "Example card body content.")
       .addDirective({
         type: 'Alexa.Presentation.APL.RenderDocument',
         version: '1.0',
@@ -25,18 +22,17 @@ const LaunchRequestHandler = {
   },
 };
 
-const MyNameIsIntentHandler = {
+const AboutIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'MyNameIsIntent';
+      && handlerInput.requestEnvelope.request.intent.name === 'AboutIntent';
   },
   handle(handlerInput) {
-
-    const nameSlot = handlerInput.requestEnvelope.request.intent.slots.name.value;
-    const speechText = `Hello ${nameSlot}. It's nice to meet you.`;
+    const speechText = 'This is a basic starter template for building an alea skill that uses the alexa presentation language. It is avaiable free from dabblelab.com.';
 
     return handlerInput.responseBuilder
       .speak(speechText)
+      .reprompt(speechText)
       .getResponse();
   },
 };
@@ -101,7 +97,7 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
-    MyNameIsIntentHandler,
+    AboutIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
