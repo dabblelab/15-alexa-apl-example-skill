@@ -5,16 +5,16 @@
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
-            "Alexa open hello world template",
-            "Alexa tell hello world template I am Jeff",
-            "Alexa tell hello world template my name is Peter"
+            "Alexa open template fifteen template",
+            "Alexa launch template fifteen template",
+            "Alexa start template fifteen template"
           ],
           "keywords": [
             "keyword1",
             "keyword2",
             "keyword3"
           ],
-          "name": "presentation-language-starter",
+          "name": "Template 15 - APL Example",
           "description": "Sample Full Description",
           "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
           "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"

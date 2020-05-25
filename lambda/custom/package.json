@@ -1,5 +1,5 @@
 {
-  "name": "dabblelab-presentation-language-starter",
+  "name": "alexa-apl-example-skill",
   "version": "1.0.0",
   "description": "Basic Alexa Skill Template for using APL",
   "main": "index.js",

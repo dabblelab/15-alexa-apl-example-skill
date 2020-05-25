@@ -1,7 +1,7 @@
 {
   "interactionModel": {
       "languageModel": {
-          "invocationName": "presentation language starter",
+          "invocationName": "template fifteen",
           "intents": [
               {
                   "name": "AMAZON.CancelIntent",
